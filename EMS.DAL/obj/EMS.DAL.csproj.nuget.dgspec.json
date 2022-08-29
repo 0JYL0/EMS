@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DAL\\EMS.DAL.csproj": {}
+  },
+  "projects": {
+    "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMP.Common\\EMP.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMP.Common\\EMP.Common.csproj",
+        "projectName": "EMP.Common",
+        "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMP.Common\\EMP.Common.csproj",
+        "packagesPath": "C:\\Users\\jayal\\.nuget\\packages\\",
+        "outputPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMP.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jayal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DAL\\EMS.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DAL\\EMS.DAL.csproj",
+        "projectName": "EMS.DAL",
+        "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DAL\\EMS.DAL.csproj",
+        "packagesPath": "C:\\Users\\jayal\\.nuget\\packages\\",
+        "outputPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jayal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DL\\EMS.DL.csproj": {
+                "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DL\\EMS.DL.csproj"
+              },
+              "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.MODEL\\EMS.MODEL.csproj": {
+                "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.MODEL\\EMS.MODEL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DL\\EMS.DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DL\\EMS.DL.csproj",
+        "projectName": "EMS.DL",
+        "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DL\\EMS.DL.csproj",
+        "packagesPath": "C:\\Users\\jayal\\.nuget\\packages\\",
+        "outputPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.DL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jayal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.MODEL\\EMS.MODEL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.MODEL\\EMS.MODEL.csproj",
+        "projectName": "EMS.MODEL",
+        "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.MODEL\\EMS.MODEL.csproj",
+        "packagesPath": "C:\\Users\\jayal\\.nuget\\packages\\",
+        "outputPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMS.MODEL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jayal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMP.Common\\EMP.Common.csproj": {
+                "projectPath": "D:\\My Projects\\ASP.net Core MVC\\EmployeeManagementSystem\\EMP.Common\\EMP.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+﻿@model EMS.MODEL.Models.ProjectMembersRequestModel;
+
+@{
+    ViewData["title"] = "Project : " + ViewBag.ManagerId;
+}
+
+<h1 class="text-center mt-4">Add Member</h1>
+
+<div clasa="container-fluid p-5">
+
+    <form asp-action="teamMembers">
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-4">
+                <label asp-for="projectId" class="control-label"></label>
+                <input asp-for="projectId" class="form-control" value="@ViewBag.ManagerId" readonly />
+                <span asp-validation-for="projectId" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="employeeId" class="control-label"></label>
+                <select asp-for="employeeId" class="form-control" asp-items="(IEnumerable<SelectListItem>)ViewBag.EmployeeId">
+                    <option disabled selected>---Select---</option>
+                </select>
+                <span asp-validation-for="employeeId" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <br />
+                <input type="submit" value="Add" asp-route-id="" class="btn btn-outline-success" />
+            </div>
+        </div>
+    </form>
+    <div class="text-center">
+        <span class="text-success">@ViewBag.Msg</span>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

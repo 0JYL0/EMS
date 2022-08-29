@@ -1,0 +1,62 @@
+﻿@model IEnumerable<EMS.MODEL.Models.EmployeeResponseModel>;
+
+@{
+    ViewData["Title"] = "Project Members";
+}
+
+
+<div class="container bg-secondary text-light">
+    <h1 class="text-center p-3">Team</h1>
+</div>
+
+<div class="container-fluid">
+
+    <table class="table">
+        <thead>
+
+            <tr>
+                <th>@Html.DisplayNameFor(x => x.EmployeeId)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeName)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeAddress)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeExperience)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeEmail)</th>
+
+                <th> # </th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>@Html.DisplayFor(x => item.EmployeeId)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeName)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeAddress)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeExperience)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeEmail)</td>
+
+                    <td><a asp-action="Editemployee" asp-route-id="@item.EmployeeId" class="btn btn-outline-success">Edit</a></td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>
+
+                    <div class="container">
+                        <span class="text-danger">@ViewBag.Msg</span>
+                    </div>

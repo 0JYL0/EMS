@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EMS.MODEL/1.0.0": {
+        "dependencies": {
+          "EMP.Common": "1.0.0"
+        },
+        "runtime": {
+          "EMS.MODEL.dll": {}
+        }
+      },
+      "EMP.Common/1.0.0": {
+        "runtime": {
+          "EMP.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EMS.MODEL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EMP.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

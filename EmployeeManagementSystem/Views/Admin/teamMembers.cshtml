@@ -1,0 +1,39 @@
+﻿@model EMS.MODEL.Models.EmployeeMappingRequestModel;
+
+@{
+    ViewData["title"] = "Manager: " + ViewBag.ManagerId;
+}
+
+<h1 class="text-center mt-4">Add Member</h1>
+
+<div clasa="container-fluid p-5">
+
+    <form asp-action="teamMembers">
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-4">
+                <label asp-for="ManagerId" class="control-label"></label>
+                <input asp-for="ManagerId" class="form-control" value="@ViewBag.ManagerId" readonly />
+                <span asp-validation-for="ManagerId" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="EmployeeId" class="control-label"></label>
+                <select asp-for="EmployeeId" class="form-control" asp-items="(IEnumerable<SelectListItem>)ViewBag.EmployeeId">
+                    <option disabled selected>---Select---</option>
+                </select>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <br />
+                <input type="submit" value="Add" asp-route-id="" class="btn btn-outline-success" />
+            </div>
+        </div>
+    </form>
+    <div class="text-center">
+        <span class="text-success">@ViewBag.Msg</span>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

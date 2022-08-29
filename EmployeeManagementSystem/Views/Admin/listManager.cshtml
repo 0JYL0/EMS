@@ -1,0 +1,64 @@
+﻿@using EMP.Common
+@model IEnumerable<EMS.MODEL.Models.EmployeeResponseModel>;
+
+@{
+    ViewData["title"] = "List of Managers";
+}
+
+<div class="container bg-secondary text-light">
+    <h1 class="text-center p-3">List of Managers</h1>
+</div>
+
+<div class="container-fluid ">
+
+    <table class="table table-bordered" style="margin:auto;">
+        <thead>
+
+            <tr>
+                <th>@Html.DisplayNameFor(x => x.EmployeeId)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeName)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeAddress)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EmployeeEmail)</th>
+
+                <th>@Html.DisplayNameFor(x => x.Technology)</th>
+
+                <th> # </th>
+                <th> # </th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>@Html.DisplayFor(x => item.EmployeeId)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeName)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeAddress)</td>
+
+                    <td>@Html.DisplayFor(x => item.EmployeeEmail)</td>
+
+                    <td>@Html.DisplayFor(x => item.Technology)</td>
+
+                    <td>
+                        <a asp-action="teamEmployee" asp-route-id="@item.EmployeeId" class="btn btn-outline-success">Team Members</a>
+                    </td>
+                    <td>
+
+                        <a asp-action="teamMembers" asp-route-id="@item.EmployeeId" class="btn btn-outline-info">Add Member</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

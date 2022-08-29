@@ -1,0 +1,89 @@
+﻿@model EMS.MODEL.Models.EmployeeResponseModel;
+
+@{
+    ViewData["title"] = "Home";
+}
+
+<h1 class="text-center">Employee Dashboard</h1>
+
+<h1 class="text-center">@ViewBag.EmployeeId</h1>
+
+<div class="container-fluid">
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.EmployeeId)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.EmployeeId)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.EmployeeName)
+            </th>
+
+            <td>
+                @Html.DisplayFor(x => x.EmployeeName)
+            </td>
+
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.EmployeeAddress)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.EmployeeAddress)
+            </td>
+
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.EmployeeEmail)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.EmployeeEmail)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.EmployeeJoiningDate)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.EmployeeJoiningDate)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.EmployeeExperience)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.EmployeeExperience)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.Role)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.Role)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.Technology)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.Technology)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.Department)
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.Department)
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,82 @@
+﻿@using EMP.Common
+@model IEnumerable<EMS.MODEL.Models.ProjectResponseModel>
+
+@{
+    ViewData["title"] = "List of Projects";
+}
+
+<div class="container bg-secondary text-light">
+    <h1 class="text-center">List of Projects</h1>
+</div>
+
+<div class="container-fluid">
+
+    <table class="table">
+        <thead>
+
+            <tr>
+                <th>@Html.DisplayNameFor(x => x.ProjectId)</th>
+
+                <th>@Html.DisplayNameFor(x => x.ProjectName)</th>
+
+                <th>@Html.DisplayNameFor(x => x.ProjectDescription)</th>
+
+                <th>@Html.DisplayNameFor(x => x.ProjectTech)</th>
+
+                <th>@Html.DisplayNameFor(x => x.StartDate)</th>
+
+                <th>@Html.DisplayNameFor(x => x.EndDate)</th>
+
+                <th>#</th>
+
+                <th>#</th>
+
+                <th>#</th>
+
+                <th>#</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>@Html.DisplayFor(x => item.ProjectId)</td>
+
+                    <td>@Html.DisplayFor(x => item.ProjectName)</td>
+
+                    <td>@Html.DisplayFor(x => item.ProjectDescription)</td>
+
+                    <td>@Html.DisplayFor(x => item.ProjectTech)</td>
+
+                    <td>@Html.DisplayFor(x => item.StartDate)</td>
+
+                    <td>@Html.DisplayFor(x => item.EndDate)</td>
+
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ProjectId" class="btn btn-outline-success">Edit</a>
+                    </td>
+                    <td>
+                        <a asp-action="listOfProjectMembers" asp-route-id="@item.ProjectId" class="btn btn-outline-info">Details</a>
+                    </td>
+
+                    <td>
+                        <a asp-action="addProjectMembers" asp-route-id="@item.ProjectId" class="btn btn-outline-info">Add Member</a>
+                    </td>
+
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.ProjectId" class="btn btn-outline-danger">Delete</a>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

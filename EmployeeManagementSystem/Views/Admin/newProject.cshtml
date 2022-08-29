@@ -1,0 +1,57 @@
+﻿@using EMP.Common
+@model EMS.MODEL.Models.ProjectRequestModel;
+    
+@{
+    ViewData["title"] = "New Project";
+}
+
+<h2 class="text-center">Create new Project</h2>
+
+<div class="container">
+    <form asp-action="newProject">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="projectName" class="control-label"></label>
+            <input asp-for="projectName" class="form-control" />
+            <span asp-validation-for="projectName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="projectDescription" class="control-label"></label>
+            <input asp-for="projectDescription" class="form-control" />
+            <span asp-validation-for="projectDescription" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="projectTech" class="control-label"></label>
+            <select asp-for="projectTech" asp-items="Html.GetEnumSelectList<technology>()" class="form-control"></select>
+            <span asp-validation-for="projectTech" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="StartDate" class="control-label"></label>
+            <input asp-for="StartDate" class="form-control" type="date"/>
+            <span asp-validation-for="StartDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="EndDate" class="control-label"></label>
+            <input asp-for="EndDate" class="form-control" type="date"/>
+            <span asp-validation-for="EndDate" class="text-danger"></span>
+        </div>
+        <div class="form-group d-flex justify-content-between">
+                <input type="submit" value="Submit" class="btn btn-outline-success" />
+                <input type="reset" value="Reset" class="btn btn-outline-info" />
+                <a asp-action="Index" class="btn btn-outline-danger">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@{  
+    if (@TempData["Msg"] != null)  
+    {  
+        <script>  
+            alert('@TempData["msg"]')  
+        </script>  
+    }  
+} 
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
